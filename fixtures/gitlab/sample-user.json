@@ -1,0 +1,52 @@
+{
+  "profile": {
+    "provider": "gitlab",
+    "username": "n1lsqn",
+    "displayName": "Casper N1L",
+    "avatarUrl": "https://gitlab.example.com/uploads/-/system/user/avatar/42/avatar.png",
+    "profileUrl": "https://gitlab.example.com/n1lsqn",
+    "createdAt": "2021-06-10T12:00:00.000Z",
+    "location": "Tokyo, Japan",
+    "websiteUrl": "https://n1lsqn.example.com",
+    "publicRepositoryCount": 18,
+    "totalRepositoryCount": 25
+  },
+  "stats": {
+    "commits": 840,
+    "contributions": 980,
+    "mergeRequestsOrPullRequests": 95,
+    "issues": 45,
+    "stars": 120,
+    "contributedTo": 14,
+    "isApiLimited": true
+  },
+  "languagesByRepository": [
+    {"name": "TypeScript", "color": "#3178c6", "repositoryCount": 10, "committedChanges": null, "percentage": 40.0},
+    {"name": "Rust", "color": "#dea584", "repositoryCount": 6, "committedChanges": null, "percentage": 24.0},
+    {"name": "Go", "color": "#00add8", "repositoryCount": 5, "committedChanges": null, "percentage": 20.0},
+    {"name": "Python", "color": "#3572a5", "repositoryCount": 3, "committedChanges": null, "percentage": 12.0},
+    {"name": "Shell", "color": "#89e051", "repositoryCount": 1, "committedChanges": null, "percentage": 4.0}
+  ],
+  "languagesByCommit": [
+    {"name": "TypeScript", "color": "#3178c6", "repositoryCount": 0, "committedChanges": 420, "percentage": 50.0, "isEstimated": true},
+    {"name": "Rust", "color": "#dea584", "repositoryCount": 0, "committedChanges": 210, "percentage": 25.0, "isEstimated": true},
+    {"name": "Go", "color": "#00add8", "repositoryCount": 0, "committedChanges": 126, "percentage": 15.0, "isEstimated": true},
+    {"name": "Python", "color": "#3572a5", "repositoryCount": 0, "committedChanges": 60, "percentage": 7.1, "isEstimated": true},
+    {"name": "Shell", "color": "#89e051", "repositoryCount": 0, "committedChanges": 24, "percentage": 2.9, "isEstimated": true}
+  ],
+  "activity": [
+    {"occurredAt": "2024-05-01T10:00:00.000Z", "hourUtc": 10, "count": 2, "source": "gitlab"},
+    {"occurredAt": "2024-05-01T14:00:00.000Z", "hourUtc": 14, "count": 1, "source": "gitlab"},
+    {"occurredAt": "2024-05-02T19:00:00.000Z", "hourUtc": 19, "count": 4, "source": "gitlab"}
+  ],
+  "dailyContributions": [
+    {"date": "2024-05-01", "count": 3, "source": "gitlab"},
+    {"date": "2024-05-02", "count": 4, "source": "gitlab"}
+  ],
+  "warnings": [
+    "GitLab activity is API-limited (events within last 365 days)",
+    "Most commit languages estimated from project language ratios"
+  ],
+  "fetchedAt": "2024-05-03T00:00:00.000Z",
+  "hasEstimatedCommitLanguages": true
+}

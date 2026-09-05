@@ -1,0 +1,53 @@
+{
+  "profile": {
+    "provider": "combined",
+    "username": "n1lsqn",
+    "displayName": "Casper N1L",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/1",
+    "profileUrl": null,
+    "createdAt": "2015-05-15T08:00:00Z",
+    "location": "Tokyo, Japan",
+    "websiteUrl": "https://n1lsqn.example.com",
+    "publicRepositoryCount": 60,
+    "totalRepositoryCount": 67,
+    "githubUsername": "n1lsqn",
+    "gitlabUsername": "n1lsqn"
+  },
+  "stats": {
+    "commits": 2090,
+    "contributions": 2480,
+    "mergeRequestsOrPullRequests": 180,
+    "issues": 85,
+    "stars": 440,
+    "contributedTo": 32,
+    "isApiLimited": true
+  },
+  "languagesByRepository": [
+    {"name": "TypeScript", "color": "#3178c6", "repositoryCount": 25, "committedChanges": null, "percentage": 37.3},
+    {"name": "JavaScript", "color": "#f1e05a", "repositoryCount": 12, "committedChanges": null, "percentage": 17.9},
+    {"name": "Python", "color": "#3572a5", "repositoryCount": 11, "committedChanges": null, "percentage": 16.4},
+    {"name": "Rust", "color": "#dea584", "repositoryCount": 6, "committedChanges": null, "percentage": 9.0},
+    {"name": "Go", "color": "#00add8", "repositoryCount": 9, "committedChanges": null, "percentage": 13.4}
+  ],
+  "languagesByCommit": [
+    {"name": "TypeScript", "color": "#3178c6", "repositoryCount": 0, "committedChanges": 1070, "percentage": 51.2, "isEstimated": true},
+    {"name": "JavaScript", "color": "#f1e05a", "repositoryCount": 0, "committedChanges": 350, "percentage": 16.7, "isEstimated": true},
+    {"name": "Rust", "color": "#dea584", "repositoryCount": 0, "committedChanges": 210, "percentage": 10.0, "isEstimated": true},
+    {"name": "Python", "color": "#3572a5", "repositoryCount": 0, "committedChanges": 210, "percentage": 10.0, "isEstimated": true},
+    {"name": "Go", "color": "#00add8", "repositoryCount": 0, "committedChanges": 196, "percentage": 9.4, "isEstimated": true}
+  ],
+  "activity": [
+    {"occurredAt": "2024-01-01T09:00:00Z", "hourUtc": 9, "count": 1, "source": "github"},
+    {"occurredAt": "2024-05-01T10:00:00.000Z", "hourUtc": 10, "count": 2, "source": "gitlab"}
+  ],
+  "dailyContributions": [
+    {"date": "2024-01-01", "count": 5, "source": "github"},
+    {"date": "2024-05-01", "count": 3, "source": "gitlab"}
+  ],
+  "warnings": [
+    "GitLab activity is API-limited (events within last 365 days)",
+    "Combined stats include GitHub measured activity and GitLab activity"
+  ],
+  "fetchedAt": "2024-05-03T00:00:00.000Z",
+  "hasEstimatedCommitLanguages": true
+}

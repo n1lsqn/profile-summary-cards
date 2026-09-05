@@ -1,0 +1,49 @@
+{
+  "profile": {
+    "provider": "github",
+    "username": "vn7n24fzkq",
+    "displayName": "Casper",
+    "avatarUrl": null,
+    "profileUrl": "https://github.com/vn7n24fzkq",
+    "createdAt": "2015-05-15T08:00:00Z",
+    "location": "Taiwan",
+    "websiteUrl": "https://blog.casper.tw",
+    "publicRepositoryCount": 42,
+    "totalRepositoryCount": 42
+  },
+  "stats": {
+    "commits": 1250,
+    "contributions": 1500,
+    "mergeRequestsOrPullRequests": 85,
+    "issues": 40,
+    "stars": 320,
+    "contributedTo": 18,
+    "isApiLimited": false
+  },
+  "languagesByRepository": [
+    {"name": "TypeScript", "color": "#3178c6", "repositoryCount": 15, "committedChanges": null, "percentage": 35.7},
+    {"name": "JavaScript", "color": "#f1e05a", "repositoryCount": 12, "committedChanges": null, "percentage": 28.6},
+    {"name": "Python", "color": "#3572a5", "repositoryCount": 8, "committedChanges": null, "percentage": 19.0},
+    {"name": "Go", "color": "#00add8", "repositoryCount": 4, "committedChanges": null, "percentage": 9.5},
+    {"name": "HTML", "color": "#e34c26", "repositoryCount": 3, "committedChanges": null, "percentage": 7.1}
+  ],
+  "languagesByCommit": [
+    {"name": "TypeScript", "color": "#3178c6", "repositoryCount": 0, "committedChanges": 650, "percentage": 52.0, "isEstimated": false},
+    {"name": "JavaScript", "color": "#f1e05a", "repositoryCount": 0, "committedChanges": 350, "percentage": 28.0, "isEstimated": false},
+    {"name": "Python", "color": "#3572a5", "repositoryCount": 0, "committedChanges": 150, "percentage": 12.0, "isEstimated": false},
+    {"name": "Go", "color": "#00add8", "repositoryCount": 0, "committedChanges": 70, "percentage": 5.6, "isEstimated": false},
+    {"name": "HTML", "color": "#e34c26", "repositoryCount": 0, "committedChanges": 30, "percentage": 2.4, "isEstimated": false}
+  ],
+  "activity": [
+    {"occurredAt": "2024-01-01T09:00:00Z", "hourUtc": 9, "count": 1, "source": "github"},
+    {"occurredAt": "2024-01-01T14:00:00Z", "hourUtc": 14, "count": 1, "source": "github"},
+    {"occurredAt": "2024-01-02T15:00:00Z", "hourUtc": 15, "count": 1, "source": "github"}
+  ],
+  "dailyContributions": [
+    {"date": "2024-01-01", "count": 5, "source": "github"},
+    {"date": "2024-01-02", "count": 8, "source": "github"}
+  ],
+  "warnings": [],
+  "fetchedAt": "2024-01-03T00:00:00.000Z",
+  "hasEstimatedCommitLanguages": false
+}

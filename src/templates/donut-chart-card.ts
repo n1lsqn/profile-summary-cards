@@ -6,7 +6,8 @@ import {Theme} from '../const/theme';
 export function createDonutChartCard(
     title: string,
     data: {name: string; value: number; color: string}[],
-    theme: Theme
+    theme: Theme,
+    note?: string
 ) {
     const pie = d3.pie<{name: string; value: number; color: string}>().value(function (d) {
         return d.value;
@@ -82,5 +83,16 @@ export function createDonutChartCard(
         })
         .attr('stroke', `${theme.background}`)
         .style('stroke-width', '2px');
+
+    if (note) {
+        svg.append('text')
+            .text(note)
+            .attr('x', card.xPadding)
+            .attr('y', card.height - 45)
+            .style('fill', theme.text)
+            .style('font-size', '9px')
+            .style('opacity', '0.7');
+    }
+
     return card.toString();
 }

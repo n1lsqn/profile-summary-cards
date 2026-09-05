@@ -3,7 +3,16 @@ import {mkdirSync, writeFileSync, readdirSync, existsSync} from 'fs';
 import {ThemeMap} from '../const/theme';
 import {OwnerType} from '../github-api/owner-type';
 
-export const OUTPUT_PATH = './profile-summary-card-output/';
+export let OUTPUT_PATH = process.env.OUTPUT_DIR
+    ? process.env.OUTPUT_DIR.endsWith('/')
+        ? process.env.OUTPUT_DIR
+        : `${process.env.OUTPUT_DIR}/`
+    : './profile-summary-card-output/';
+
+export const setOutputPath = (newPath: string) => {
+    OUTPUT_PATH = newPath.endsWith('/') ? newPath : `${newPath}/`;
+};
+
 const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY;
 
 // If neither a branch or tag is available for the event type, the variable will not exist. https://docs.github.com/en/actions/configuring-and-managing-workflows/using-environment-variables

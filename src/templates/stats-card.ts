@@ -6,7 +6,9 @@ export function createStatsCard(
     title: string,
     statsData: {index: number; icon: string; name: string; value: string}[],
     theme: Theme,
-    hideLogo = false
+    hideLogo = false,
+    logoType: 'github' | 'gitlab' | 'combined' = 'github',
+    footerNote?: string
 ) {
     // Without the logo the right side is dead space; shrink the card so it
     // actually frees room in side-by-side README layouts (#141): stat values
@@ -71,8 +73,28 @@ export function createStatsCard(
         .style('font-size', `${labelHeight}px`);
 
     if (!hideLogo) {
-        const panelForGitHubLogo = svg.append('g').attr('transform', `translate(220,20)`);
-        panelForGitHubLogo.append('g').attr('transform', `scale(6)`).style('fill', theme.icon).html(Icon.GITHUB);
+        if (logoType === 'gitlab') {
+            const panelForGitLabLogo = svg.append('g').attr('transform', `translate(220,20)`);
+            panelForGitLabLogo.append('g').attr('transform', `scale(6)`).style('fill', theme.icon).html(Icon.GITLAB);
+        } else if (logoType === 'combined') {
+            const panelForGitHubLogo = svg.append('g').attr('transform', `translate(230,15)`);
+            panelForGitHubLogo.append('g').attr('transform', `scale(3.2)`).style('fill', theme.icon).html(Icon.GITHUB);
+            const panelForGitLabLogo = svg.append('g').attr('transform', `translate(230,75)`);
+            panelForGitLabLogo.append('g').attr('transform', `scale(3.2)`).style('fill', theme.icon).html(Icon.GITLAB);
+        } else {
+            const panelForGitHubLogo = svg.append('g').attr('transform', `translate(220,20)`);
+            panelForGitHubLogo.append('g').attr('transform', `scale(6)`).style('fill', theme.icon).html(Icon.GITHUB);
+        }
+    }
+
+    if (footerNote) {
+        svg.append('text')
+            .text(footerNote)
+            .attr('x', 30)
+            .attr('y', 145)
+            .style('fill', theme.text)
+            .style('font-size', '9px')
+            .style('opacity', '0.7');
     }
 
     return card.toString();
